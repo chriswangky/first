@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+void swap(int **p, int **q)
+{
+	int *t;
+	t=*p;
+	*p=*q;
+	*q=t;
+}
+int main()
+{
+	int a=0,b=1;
+	int *p=&a;
+	int *q=&b;
+	swap(*p,*q);
+	cout<<*p<<" "<<*q<<endl;
+	return 0;
+}
